@@ -19,18 +19,10 @@ You've landed at the page for an overlap-layout-consensus (OLC) metagenome assem
 
     3. We have taken out the module that uses paired end reads to build scaffolds since it seems to generate undesired misassemblies. We currently recommend using one of the specialized scaffolding tools. And we have plans to bring the module back with improvement. 
 
-<<<<<<< HEAD
     4. New module where longer accurate reads threading (such as error corrected PacBio reads) can help resolve ambiguity in the overlap graph. Using this module requires a SAM file for input, where the alignment of non-redundant Illumina reads to the PacBio reads, **sorted** (which can be achieved using samtools). Currently the threading is done in an agressive version, i.e. as long as there is one PacBio read that supports connecting two edges in the overlap graph together, the action is taken.
 
 ### Current Version
-* v1.2.1
-=======
-    3. New module where longer accurate reads threading (such as error corrected PacBio reads) can help resolve ambiguity in the overlap graph. - This feature is currently under testing.
-
-### Current Version
-* v1.2
->>>>>>> jj
-
+* v1.4
 
 ### How to assemble metagenomic sequencing reads from raw data
 
@@ -140,8 +132,4 @@ Higher coverage, longer reads can use longer overlap length. For our test, with 
 
 * [JJ Crosskey](mailto:crosskey.jj@gmail.com)
 * [Qiuming Yao](mailto:yao.ornl@gmail.com)
-<<<<<<< HEAD
 * [Ted Ahn](mailto:ahn.no1@gmail.com)
-=======
-* [Ted Ahn](mailto:ahn.no1@gmail.com)
->>>>>>> jj
